@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+
+body{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Reuseable */
+
+.p-spacer{
+    padding: 2rem 0;
+}
+
+.c-spacer{
+    margin-top: 1rem;
+}
+
+/* End */
+
+
+
+.header-area, .hero-area{
+    background-color: var(--surface);
+}
+
+.hero-left{
+    display: flex;
+    align-items: center;
+}
+
+.about-me{
+    background-color: var(--surface);
+    padding: 1.5rem;
+    box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+    border-radius: 8px;
+    position: relative;
+}
+
+.about-me::before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 15px solid #FFF;
+	position: absolute;
+	left: 48%;
+	top: -15px;
+	transform: rotate(90deg);
+}
+
+.about-img{
+    text-align: center;
+}
+
+.services-area{
+    background-color: var(--surface);
+}
+
+.service>div{
+    padding: 1rem;
+    border-radius: 14px;
+    height: 100%;
+    text-align: center;
+}
+
+.service i{
+    font-size: 3.5em;
+}
+
+.service-1{
+    /* background-image: linear-gradient(to bottom right, #8383EF, #E7D1FF); */
+    /* box-shadow: 0px 5px 20px 0px rgb(108 108 229 / 50%); */
+}
+
+.service-1 i{
+    color: var(--blue);
+}
+
+.service-2{
+    /* background-image: linear-gradient(to bottom right, #FFAF73, #FFFECC); */
+    /* box-shadow: 0px 5px 20px 0px rgb(108 108 229 / 50%); */
+}
+
+.service-2 i{
+    color: var(--green)
+}
+
+.service-3{
+    /* background-image: linear-gradient(to bottom right, #8383EF, #E7D1FF); */
+    /* box-shadow: 0px 5px 20px 0px rgb(108 108 229 / 50%); */
+}
+
+.service-3 i{
+    color: var(--orange);
+}
+
+
+/* ================================= Qualification Area =================================== */
+
+.qualification-area{
+    background-color: var(--surface);
+}
+
+.qualification-tab{
+    text-align: center;
+}
+
+.qualification-tab a{
+    font-weight: 500;
+}
+
+.timeline{
+    position: relative;
+}
+
+.timeline .v-line {
+    position: absolute;
+    height: 100%;
+    border-right: 1px solid var(--primary);
+    top: 0;
+    left: -40px;
+}
+
+.timeline-content{
+    position: relative;
+}
+
+
+.timeline-content::before {
+    content: '\e905';
+    position: absolute;
+    font-family: 'unicons-line';
+    left: -53px;
+    top: 0;
+    font-size: 1.8rem;
+    background: var(--surface);
+    z-index: 9;
+    color: var(--primary)
+}
+
+/* ================================= Portfolio Area Area =================================== */
+
+.portfolio-tabs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-tabs li{
+    font-weight: 700;
+    padding: 0.2rem 1rem;
+    cursor: pointer;
+}
+
+
+.project {
+    box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+    display: block;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+
+.contact-area{
+    background-color: var(--surface);
+}
+
+.social-media{
+    display: flex;
+}
+
+.social-media a{
+    font-size: 1.5em;
+    margin-right: 1rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    .p-spacer{
+        padding: 3rem 0;
+    }
+    .hero-area{
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,180 @@
+:root {
+    --blue: #5e72e4;
+    --indigo: #5603ad;
+    --purple: #8965e0;
+    --pink: #f3a4b5;
+    --red: #f5365c;
+    --orange: #fb6340;
+    --yellow: #ffd600;
+    --green: #2dce89;
+    --teal: #11cdef;
+    --cyan: #2bffc6;
+    --white: #fff;
+    --gray: #8898aa;
+    --gray-dark: #32325d;
+    --light: #ced4da;
+    --lighter: #e9ecef;
+    --dark: #212529;
+    --darker: black;
+    --neutral: #fff;
+    
+    --primary: #404de6;
+    --secondary: #72e9f3 ;
+
+    --basic: #172b4d;
+    --default: #172b4d;
+    --success: #2dce89;
+    --info: #11cdef;
+    --warning: #fb6340;
+    --danger: #f5365c;
+    
+    --background: #F5F5F5;
+    --surface: #fff;
+    --on-primary: #fff;
+    --on-secondary: #000;
+    --on-background: #000;
+    --on-surface: #525f7f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    /* font-family: 'Roboto', Arial, Helvetica, sans-serif; */
+    background: var(--background);
+    color: var(--on-surface);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+
+a {
+  color: var(--on-surface);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+
+.dropdown-menu{
+  border: none;
+  box-shadow: 0px 5px 15px 1px rgb(0 0 0 / 8%);
+  border: 1px solid #f2f4f9;
+  position: relative;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #32325d;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.15rem;
+}
+/* 
+.btn-primary {
+  color: var(--on-primary);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+  background-color: var(--secondary);
+  border-color: var(--secondary-variant);
+} */
+
+.form-control, .form-control:focus, .form-control:hover, 
+.form-control:active, .form-control:visited{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
+
+
+
+
