@@ -18,8 +18,9 @@
     --darker: black;
     --neutral: #fff;
     
-    --primary: #404de6;
-    --secondary: #72e9f3 ;
+    --primary: #dc3545;
+    --secondary: #72e9f3;
+    --third: #6563ff;
 
     --basic: #172b4d;
     --default: #172b4d;
@@ -173,8 +174,4 @@ h6,
   border: none;
   box-shadow: none;
 }
-
-
-
-
 

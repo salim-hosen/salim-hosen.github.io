@@ -1,9 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
 
 
-body{
-    font-family: 'Josefin Sans', sans-serif;
+:root {
+    --blue: #5e72e4;
+    --indigo: #5603ad;
+    --purple: #8965e0;
+    --pink: #f3a4b5;
+    --red: #f5365c;
+    --orange: #fb6340;
+    --yellow: #ffd600;
+    --green: #2dce89;
+    --teal: #11cdef;
+    --cyan: #2bffc6;
+    --white: #fff;
+    --gray: #8898aa;
+    --gray-dark: #32325d;
+    --light: #ced4da;
+    --lighter: #e9ecef;
+    --dark: #212529;
+    --darker: black;
+    --neutral: #fff;
+    
+    --primary: #dc3545;
+    --secondary: #72e9f3;
+    --third: #6563ff;
+
+    --basic: #172b4d;
+    --default: #172b4d;
+    --success: #2dce89;
+    --info: #11cdef;
+    --warning: #fb6340;
+    --danger: #f5365c;
+    
+    --background: #F5F5F5;
+    --surface: #fff;
+    --on-primary: #fff;
+    --on-secondary: #000;
+    --on-background: #000;
+    --on-surface: #525f7f;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html, body{
+    /* font-family: 'Roboto', Arial, Helvetica, sans-serif; */
+    background: var(--background);
+    color: var(--on-surface);
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+
+
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+a, a:hover{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+
+a {
+  color: var(--on-surface);
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+
+.dropdown-menu{
+  border: none;
+  box-shadow: 0px 5px 15px 1px rgb(0 0 0 / 8%);
+  border: 1px solid #f2f4f9;
+  position: relative;
+}
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  margin-bottom: 0.5rem;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #32325d;
+}
+
+h1,
+.h1 {
+  font-size: 2.5rem;
+}
+
+h2,
+.h2 {
+  font-size: 2rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.75rem;
+}
+
+h4,
+.h4 {
+  font-size: 1.5rem;
+}
+
+h5,
+.h5 {
+  font-size: 1.25rem;
+}
+
+h6,
+.h6 {
+  font-size: 1.15rem;
+}
+/* 
+.btn-primary {
+  color: var(--on-primary);
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+  background-color: var(--secondary);
+  border-color: var(--secondary-variant);
+} */
+
+.form-control, .form-control:focus, .form-control:hover, 
+.form-control:active, .form-control:visited{
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+
 
 /* Reuseable */
 
@@ -28,12 +202,18 @@ body{
     align-items: center;
 }
 
+.intro h6{
+    color: var(--primary);
+}
+
+
 .about-me{
     background-color: var(--surface);
     padding: 1.5rem;
     box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
     border-radius: 8px;
     position: relative;
+    margin-top: 1.5rem;
 }
 
 .about-me::before {
@@ -62,6 +242,13 @@ body{
     border-radius: 14px;
     height: 100%;
     text-align: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.service>div:hover {
+    box-shadow: 0px 0px 10px #eee;
+    transform: translate(0, -10px);
+    
 }
 
 .service i{
@@ -120,10 +307,12 @@ body{
     border-right: 1px solid var(--primary);
     top: 0;
     left: -40px;
+    display: none;
 }
 
 .timeline-content{
     position: relative;
+    margin-top: 2rem;
 }
 
 
@@ -136,6 +325,27 @@ body{
     font-size: 1.8rem;
     background: var(--surface);
     z-index: 9;
+    color: var(--primary);
+    display: none;
+}
+
+.edu-timeline .timeline-content::before{
+    content: '\e905';
+}
+
+.work-timeline .timeline-content::before{
+    content: '\e8ac';
+}
+
+.work-timeline{
+    display: none;
+}
+
+.portfolio-tabs .active{
+    color: var(--primary)
+}
+
+.qualification-tab .active{
     color: var(--primary)
 }
 
@@ -152,13 +362,69 @@ body{
     cursor: pointer;
 }
 
+.portfolio-tabs .active{
+    color: var(--primary)
+}
+
 
 .project {
     box-shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
     display: block;
     border-radius: 20px;
     overflow: hidden;
+    /* transform: rotateY(0); */
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+    margin-top: 1.5rem;
+    height: 260px;
 }
+
+.project img{
+    height: 100%;
+    width: 100%;
+}
+
+.project:hover .project-content{
+    visibility: visible;
+    opacity: 1;
+}
+
+.project-content{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(64, 77, 230, 0.9);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    padding: 2rem;
+}
+
+.project-keywords {
+    display: inline-flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-content h6{
+    color: var(--on-primary);
+}
+
+.project-keywords li{
+    background: var(--secondary);
+    padding: 0.2rem 0.5rem;
+    border-radius: 6px;
+    font-size: 14px;
+    color: var(--on-secondary);
+}
+
 
 
 .contact-area{
@@ -174,6 +440,77 @@ body{
     margin-right: 1rem;
 }
 
+.email-at a:hover{
+    text-decoration: underline;
+}
+
+.email-at h1{
+    font-size: 2rem;
+}
+
+h2{
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+h2::before {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px 0px 6px 0;
+}
+
+
+/* ================================= Footer Area =================================== */
+.footer-menu{
+    background: var(--surface);
+    padding: 2rem 0;
+}
+
+.footer-menu-row > div{
+    margin-bottom: 1.5rem;
+}
+
+.footer-menu li{
+    padding: 0.4rem 0;
+}
+
+.opro{
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+
+.footer-menu h6{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.footer-menu h6::before{
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+}
+
+
+.contact-details i{
+    color: var(--primary)
+}
+
+.copyright p{
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0;
+}
+
 
 
 @media only screen and (min-width: 768px) {
@@ -181,6 +518,25 @@ body{
         padding: 3rem 0;
     }
     .hero-area{
-        padding-top: 0;
+        padding-bottom: 5rem;
+        padding-top: 2rem;
+    }
+
+    .about-me::before {
+        left: -15px;
+        top: 15px;
+        transform: rotate(0deg);
+    }
+
+    .timeline-content::before, .timeline .v-line{
+        display: block;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .email-at h1{
+        font-size: 2.5rem;
     }
 }
