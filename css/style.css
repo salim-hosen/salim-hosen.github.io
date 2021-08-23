@@ -229,9 +229,15 @@ h6,
 	transform: rotate(90deg);
 }
 
-.about-img{
+.about-img {
     text-align: center;
 }
+
+.about-img img{
+    width: 180px;
+    height: 180px;
+}
+
 
 .services-area{
     background-color: var(--surface);
