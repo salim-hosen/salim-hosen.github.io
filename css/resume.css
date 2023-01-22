@@ -110,140 +110,49 @@ a:hover {
 }
 
 
-.dropdown-menu{
-  border: none;
-  box-shadow: 0px 5px 15px 1px rgb(0 0 0 / 8%);
-  border: 1px solid #f2f4f9;
+.h1{
+
+}
+
+.h2{
+
+}
+
+.h3{
+
+}
+
+.h4{
+  
+}
+
+.h5{
+  
+}
+
+
+.timeline {
+  margin-top: 1.8125rem;
+  padding-left: 0.5rem;
+}
+
+.timeline__item {
+  border-left-color: #F0F0F6;
+  border-left-width: 1px;
+  border-left-style: solid;
+  padding-bottom: 0.5625rem;
+  padding-left: 1.375rem;
   position: relative;
 }
 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin-bottom: 0.5rem;
-  font-family: inherit;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #32325d;
-}
-
-h1,
-.h1 {
-  font-size: 2.5rem;
-}
-
-h2,
-.h2 {
-  font-size: 2rem;
-}
-
-h3,
-.h3 {
-  font-size: 1.75rem;
-}
-
-h4,
-.h4 {
-  font-size: 1.5rem;
-}
-
-h5,
-.h5 {
-  font-size: 1.25rem;
-}
-
-h6,
-.h6 {
-  font-size: 1.15rem;
-}
-/* 
-.btn-primary {
-  color: var(--on-primary);
-  background-color: var(--primary);
-  border-color: var(--primary);
-}
-
-.btn-primary:hover, .btn-primary:active, .btn-primary:visited{
-  background-color: var(--secondary);
-  border-color: var(--secondary-variant);
-} */
-
-.form-control, .form-control:focus, .form-control:hover, 
-.form-control:active, .form-control:visited{
-  outline: none;
-  border: none;
-  box-shadow: none;
-}
-
-
-/* ================================= Qualification Area =================================== */
-
-.qualification-area{
-    background-color: var(--surface);
-}
-
-.qualification-tab{
-    text-align: center;
-}
-
-.qualification-tab a{
-    font-weight: 500;
-}
-
-.timeline{
-    position: relative;
-}
-
-
-
-.timeline-content{
-    position: relative;
-    margin-top: 2rem;
-}
-
-
-.timeline-content::before {
-    content: '\ecb7';
-    position: absolute;
-    font-family: 'unicons-line';
-    left: -27px;
-    top: 5px;
-    font-size: 0.9rem;
-    background: #fff;
-    z-index: 9;
-    color: var(--primary);
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    line-height: 14px;
-}
-
-
-
-.portfolio-tabs .active{
-    color: var(--primary)
-}
-
-.qualification-tab .active{
-    color: var(--primary)
-}
-
-
-.timeline .v-line {
-    position: absolute;
-    height: 100%;
-    border-right: 1px solid #ccc;
-    top: 5px;
-    left: -21px;
+.timeline__item::before {
+  content: '';
+  background-color: #304CFD;
+  box-shadow: 0 0 0 0.1875rem rgba(48, 76, 253, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: -0.3125rem;
+  height: 0.625rem;
+  width: 0.625rem;
 }
