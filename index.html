@@ -66,7 +66,7 @@
                 <!-- <li><a href="https://api.whatsapp.com/send?phone=8801762473884"><i class="uil uil-whatsapp"></i></a></li> -->
                 <li><a href="https://www.linkedin.com/in/mohammad-salim-hosen/" target="_blank"><i class="uil uil-linkedin-alt"></i></a></li>
                 <li><a href="https://github.com/salim-hosen" target="_blank"><i class="uil uil-github-alt"></i></a></li>
-                <li><a href="https://www.youtube.com/channel/UCWbGVztpv5PEC15e7nOQRyA" target="_blank"><i class="uil uil-youtube"></i></a></li>
+                <li><a href="https://www.youtube.com/@bitbotlab" target="_blank"><i class="uil uil-youtube"></i></a></li>
               </ul>
             </div>
           </div>
@@ -94,7 +94,7 @@
                 <div class="col-md-7">
                   <div class="about-me">
                     <p>I am Salim Hosen, Software Engineer from Dhaka, Bangladesh. I have rich experience in web design and development and customization, also I am good at modern Javascript.</p>
-                    <a href="#" class="btn btn-danger" id="download-resume">
+                    <a href="file/resume-of-mohammad-salim-hosen.pdf" class="btn btn-danger" download>
                       <i class="uil uil-import"></i>
                       <span class="mx-1"></span>
                       <span>Resume</span>
@@ -405,24 +405,10 @@
       </section>
     </footer>
 
-    <iframe style="display: none;" src="resume.html" title="Resume" id="resume-iframe" name="printf"></iframe>
-
     <!-- JS Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/isotope.min.js"></script>
     <script src="js/main.js"></script>
-
-    <script>
-      $(document).ready(function(){
-        $("#download-resume").on("click", function(e){
-          e.preventDefault();
-    
-          window.frames["printf"].focus();
-          window.frames["printf"].print();
-
-        });
-      });
-    </script>
 
   </body>
 </html>
