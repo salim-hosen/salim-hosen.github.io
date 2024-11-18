@@ -94,7 +94,7 @@
                 <div class="col-md-7">
                   <div class="about-me">
                     <p>I am Salim Hosen, Software Engineer from Dhaka, Bangladesh. I have rich experience in web design and development and customization, also I am good at modern Javascript.</p>
-                    <a href="file/resume-of-mohammad-salim-hosen.pdf" class="btn btn-danger" download>
+                    <a href="#" class="btn btn-danger" id="download-resume">
                       <i class="uil uil-import"></i>
                       <span class="mx-1"></span>
                       <span>Resume</span>
@@ -204,13 +204,13 @@
           <div class="row grid">
             
             <div class="col-md-4 popular">
-              <a href="https://bachao.com.bd/" target="_blank" class="project">
-                <img src="images/bachao.png" loading="lazy" alt="Bachao Landing Page" class="img-fluid">
+              <a href="https://pickgo.com/" target="_blank" class="project">
+                <img src="images/pickgo.png" loading="lazy" alt="Pickgo Landing Page" class="img-fluid">
                 <div class="project-content">
-                  <h6>Bachao</h6>
+                  <h6>Pickgo</h6>
                   <ul class="project-keywords">
-                    <li>Angular</li>
-                    <li>NodeJs</li>
+                    <li>Laravel</li>
+                    <li>VueJs</li>
                   </ul>
                 </div>
               </a>
@@ -223,7 +223,7 @@
                   <h6>TajaBajar</h6>
                   <ul class="project-keywords">
                     <li>Laravel</li>
-                    <li>MySql</li>
+                    <li>Next.js</li>
                     <li>AWS</li>
                   </ul>
                 </div>
@@ -405,34 +405,23 @@
       </section>
     </footer>
 
+    <iframe style="display: none;" src="resume.html" title="Resume" id="resume-iframe" name="printf"></iframe>
+
     <!-- JS Files -->
     <script src="js/jquery.min.js"></script>
     <script src="js/isotope.min.js"></script>
     <script src="js/main.js"></script>
 
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js";
-      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
+    <script>
+      $(document).ready(function(){
+        $("#download-resume").on("click", function(e){
+          e.preventDefault();
     
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      const firebaseConfig = {
-        apiKey: "AIzaSyBHaHuFpeKbXYE-miKKi9vcEFAu8-tfM_E",
-        authDomain: "salim-hosen.firebaseapp.com",
-        databaseURL: "https://salim-hosen.firebaseio.com",
-        projectId: "salim-hosen",
-        storageBucket: "salim-hosen.appspot.com",
-        messagingSenderId: "870311552382",
-        appId: "1:870311552382:web:44c6c8b8c3378b1d1f3f2f",
-        measurementId: "G-2VJJBERWRH"
-      };
-    
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      const analytics = getAnalytics(app);
+          window.frames["printf"].focus();
+          window.frames["printf"].print();
+
+        });
+      });
     </script>
 
   </body>
