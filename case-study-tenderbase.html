@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mohammad Salim Hosen">
+  <meta name="robots" content="index, follow">
+
+  <title>Tenderbase Case Study &ndash; Mohammad Salim Hosen</title>
+  <meta name="description" content="Case study on engineering Tenderbase, a high-scale procurement intelligence platform indexing 500K+ global tenders.">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tenderbase Case Study &ndash; Mohammad Salim Hosen">
+  <meta property="og:description" content="Engineering a high-scale procurement intelligence platform.">
+  <meta property="og:image" content="images/hero-portrait.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, JetBrains Mono & Caveat (Handwritten) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* Specific overrides for the reading layout */
+    .case-study-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    
+    .article-header {
+      padding: 60px 0 40px;
+      border-bottom: 1px solid var(--border-color);
+      margin-bottom: 40px;
+    }
+    
+    .article-title {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--text-title);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      background: linear-gradient(to right, var(--text-title), var(--accent-blue));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .article-subtitle {
+      font-size: 20px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+
+    .article-content h3 {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text-title);
+      margin: 40px 0 16px;
+    }
+
+    .article-content p {
+      margin-bottom: 24px;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+
+    .article-content ul {
+      margin-bottom: 32px;
+      padding-left: 20px;
+      list-style-type: none;
+    }
+
+    .article-content li {
+      position: relative;
+      margin-bottom: 12px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .article-content li::before {
+      content: '▹';
+      position: absolute;
+      left: -20px;
+      color: var(--accent-blue);
+      font-weight: 700;
+    }
+
+    .hero-tech-pills {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       Header & Navigation Bar
+       ==================================================================== -->
+  <header class="site-nav-header">
+    <div class="container">
+      <nav class="nav-container">
+
+        <!-- Logo -->
+        <a href="index.html" class="brand-link" title="Mohammad Salim Hosen">
+          <span>SALIM</span>
+          <span class="brand-sparkle">✦</span>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <ul class="main-nav-links">
+          <li><a href="index.html#hero" class="main-nav-link">Home</a></li>
+          <li><a href="index.html#about" class="main-nav-link">About</a></li>
+          <li><a href="index.html#experience" class="main-nav-link">Experience</a></li>
+          <li><a href="index.html#projects" class="main-nav-link active">Projects</a></li>
+          <li><a href="index.html#blog" class="main-nav-link">Blog</a></li>
+          <li><a href="index.html#contact" class="main-nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Controls -->
+        <div class="nav-controls">
+          <button class="btn-theme-toggle" id="btn-theme-toggle" title="Toggle Light/Dark Theme"
+            aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="file/Mohammad-Salim-Hosen-Resume.pdf" download="Mohammad-Salim-Hosen-Resume.pdf"
+            class="btn-download-resume-header">
+            <i class="fas fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+          <button class="mobile-hamburger" aria-label="Open mobile menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       Article Content
+       ==================================================================== -->
+  <main class="section-spacer">
+    <article class="case-study-container">
+      
+      <header class="article-header reveal-on-scroll">
+        <div class="section-kicker-badge" style="margin-bottom: 16px;">CASE STUDY</div>
+        <h1 class="article-title">Tenderbase: Building an AI-Powered Procurement Intelligence Platform</h1>
+        <p class="article-subtitle">Engineering a procurement intelligence platform featuring AI semantic search, automated data pipelines, and enterprise integrations.</p>
+        
+        <div class="hero-tech-pills">
+          <span class="hero-pill">Python</span>
+          <span class="hero-pill">ClickHouse</span>
+          <span class="hero-pill">CodeIgniter 4</span>
+          <span class="hero-pill">OpenAI</span>
+          <span class="hero-pill">AWS</span>
+        </div>
+      </header>
+
+      <div class="article-content reveal-on-scroll reveal-delay-100">
+        <h3>The Problem</h3>
+        <p>
+          Global procurement data is fragmented, unstructured, and buried across thousands of independent government portals. For businesses looking to bid on public contracts, finding relevant tenders in real-time was a tedious, manual process that often resulted in missed opportunities.
+        </p>
+        <p>
+          At Byteshake Ltd., we set out to build <strong>Tenderbase</strong>—a centralized platform that not only aggregated this data but made it instantly searchable through semantic meaning rather than just exact keyword matches.
+        </p>
+
+        <h3>The Architecture</h3>
+        <p>
+          The system required three distinct core components: a robust distributed scraping engine, a highly optimized OLAP database, and an AI semantic search layer.
+        </p>
+        <ul>
+          <li><strong>Data Ingestion Layer:</strong> Contributed to building a scalable web scraping cluster using Python. This system automatically crawls hundreds of portals daily, extracts raw text, cleanses it, and queues it for processing.</li>
+          <li><strong>Storage & Analytics (ClickHouse):</strong> Standard relational databases buckled under the weight of hundreds of thousands of large text blobs during complex text searches. We migrated our core analytical workload to <strong>ClickHouse</strong>, a columnar database perfectly suited for blazing-fast aggregations and filtering over massive datasets.</li>
+          <li><strong>AI Semantic Search (OpenAI / Vector Embeddings):</strong> To move beyond simple text matching, we utilized OpenAI to generate vector embeddings for tender descriptions. By integrating these embeddings, users can now search for "cloud infrastructure upgrades" and find tenders labeled as "server modernization" based on context.</li>
+          <li><strong>The API Backend:</strong> Built with CodeIgniter 4, the REST API serves as the lightweight glue holding the system together, securely exposing the data to our React frontend while managing user authentication and subscription billing.</li>
+        </ul>
+
+        <h3>Key Features & Challenges Overcome</h3>
+        <ul>
+          <li><strong>AI Natural Language Search:</strong> Developed an advanced search engine that takes raw human input, processes it through an AI API, and dynamically structures it into high-precision database filters.</li>
+          <li><strong>AI Audit & Preference Engine:</strong> Engineered automated AI audit report generation and a proprietary preference engine that instantly predicts a user's tender interests based solely on their business URL or description.</li>
+          <li><strong>Enterprise Integrations:</strong> Seamlessly integrated the platform with major third-party CRMs and tools including Salesforce, Monday.com, HubSpot, WhatsApp, and Google Sheets.</li>
+          <li><strong>Data Ingestion & Automation:</strong> Built a robust Python scraping cluster and automation pipeline that continuously crawls source websites and uploads cleansed data automatically without manual intervention.</li>
+          <li><strong>Interactive Gantt Charts:</strong> Designed and implemented dynamic Gantt charts for visualizing complex DPS (Dynamic Purchasing System) and Framework tenders, significantly improving user project planning.</li>
+          <li><strong>Query Optimization:</strong> Initial full-text searches were taking upwards of 3.2 seconds. By optimizing ClickHouse indexes and caching, our team brought the 95th percentile latency down to <strong>&lt;120ms</strong>.</li>
+        </ul>
+
+        <h3>The Impact</h3>
+        <p>
+          Today, Tenderbase indexes over <strong>500,000+ tenders</strong> and serves hundreds of enterprise clients. The transition to ClickHouse and the implementation of AI search reduced average time-to-discovery by over 40%, directly translating to higher customer retention and increased contract win rates for our users.
+        </p>
+
+        <div style="margin-top: 50px; text-align: center;">
+          <a href="index.html#projects" class="btn-outline-white">
+            <i class="fas fa-arrow-left"></i>
+            <span>Back to Projects</span>
+          </a>
+        </div>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="site-main-footer">
+    <div class="container">
+      <div class="footer-row-layout">
+
+        <!-- Left Footer -->
+        <div class="footer-left">
+          <a href="index.html" class="brand-link" style="font-size: 18px;">
+            <span>SALIM</span>
+            <span class="brand-sparkle">✦</span>
+          </a>
+          <div class="footer-subtitle-tag">Build &bull; Automate &bull; Scale &bull; Repeat</div>
+        </div>
+
+        <!-- Right Footer -->
+        <div class="footer-right">
+          <div class="footer-copyright-text">
+            &copy; 2026 Mohammad Salim Hosen. All rights reserved.
+          </div>
+          <div class="footer-links-strip">
+            <a href="https://github.com/salim-hosen" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/salim-pro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.youtube.com/@bitbotlab" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer">Blog</a>
+          </div>
+          <button class="btn-back-to-top" id="btn-back-to-top" title="Back to top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Asoug.com Case Study &ndash; Mohammad Salim Hosen</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .case-study-container { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+    .article-header { padding: 60px 0 40px; border-bottom: 1px solid var(--border-color); margin-bottom: 40px; }
+    .article-title { font-size: 42px; font-weight: 800; letter-spacing: -0.03em; color: var(--text-title); line-height: 1.15; margin-bottom: 16px; background: linear-gradient(to right, var(--text-title), var(--accent-blue)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .article-subtitle { font-size: 20px; color: var(--text-muted); margin-bottom: 24px; font-weight: 500; }
+    .article-content h3 { font-size: 24px; font-weight: 700; color: var(--text-title); margin: 40px 0 16px; }
+    .article-content p { margin-bottom: 24px; font-size: 16px; line-height: 1.7; }
+    .article-content ul { margin-bottom: 32px; padding-left: 20px; list-style-type: none; }
+    .article-content li { position: relative; margin-bottom: 12px; font-size: 16px; line-height: 1.6; }
+    .article-content li::before { content: '▹'; position: absolute; left: -20px; color: var(--accent-blue); font-weight: 700; }
+    .hero-tech-pills { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <header class="site-nav-header">
+    <div class="container">
+      <nav class="nav-container">
+        <a href="index.html" class="brand-link"><span>SALIM</span><span class="brand-sparkle">✦</span></a>
+        <ul class="main-nav-links">
+          <li><a href="index.html#hero" class="main-nav-link">Home</a></li>
+          <li><a href="index.html#about" class="main-nav-link">About</a></li>
+          <li><a href="index.html#experience" class="main-nav-link">Experience</a></li>
+          <li><a href="index.html#projects" class="main-nav-link active">Projects</a></li>
+          <li><a href="index.html#blog" class="main-nav-link">Blog</a></li>
+          <li><a href="index.html#contact" class="main-nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-controls">
+          <button class="btn-theme-toggle" id="btn-theme-toggle"><i class="fas fa-moon"></i></button>
+          <a href="file/Mohammad-Salim-Hosen-Resume.pdf" download class="btn-download-resume-header">
+            <i class="fas fa-download"></i><span>Download Resume</span>
+          </a>
+          <button class="mobile-hamburger"><i class="fas fa-bars"></i></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section-spacer">
+    <article class="case-study-container">
+      <header class="article-header reveal-on-scroll">
+        <div class="section-kicker-badge" style="margin-bottom: 16px;">CASE STUDY</div>
+        <h1 class="article-title">Asoug.com: Multi-Vendor E-commerce Platform</h1>
+        <p class="article-subtitle">Building an end-to-end B2B and multi-vendor marketplace completely from scratch.</p>
+        <div class="hero-tech-pills">
+          <span class="hero-pill">Laravel</span>
+          <span class="hero-pill">Vue.js</span>
+          <span class="hero-pill">MySQL</span>
+        </div>
+      </header>
+
+      <div class="article-content reveal-on-scroll reveal-delay-100">
+        <h3>The Problem</h3>
+        <p>Creating a scalable digital marketplace requires balancing complex logistics, vendor management, and user experience. Asoug.com needed to serve as both a B2B platform and a multi-vendor retail hub, allowing distinct businesses to manage their own storefronts seamlessly.</p>
+        
+        <h3>Architecture & Development</h3>
+        <ul>
+          <li><strong>Sole Developer:</strong> Engineered the entire platform independently from the ground up, handling both frontend architecture and complex backend logic.</li>
+          <li><strong>Multi-Vendor Ecosystem:</strong> Built sophisticated vendor dashboards allowing individual businesses to manage inventory, pricing, and fulfillment within a unified marketplace.</li>
+          <li><strong>B2B Capabilities:</strong> Implemented specialized wholesale functionality, including tiered pricing, bulk ordering flows, and customized invoicing systems.</li>
+          <li><strong>Tech Stack:</strong> Utilized Laravel for a secure, robust API and business logic layer, paired with a dynamic Vue.js frontend for a seamless shopping experience.</li>
+        </ul>
+
+        <div style="margin-top: 50px; text-align: center;">
+          <a href="index.html#projects" class="btn-outline-white"><i class="fas fa-arrow-left"></i><span>Back to Projects</span></a>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-main-footer">
+    <div class="container">
+      <div class="footer-row-layout">
+        <div class="footer-left">
+          <a href="index.html" class="brand-link" style="font-size: 18px;"><span>SALIM</span><span class="brand-sparkle">✦</span></a>
+          <div class="footer-subtitle-tag">Build &bull; Automate &bull; Scale &bull; Repeat</div>
+        </div>
+        <div class="footer-right">
+          <div class="footer-copyright-text">&copy; 2026 Mohammad Salim Hosen. All rights reserved.</div>
+          <button class="btn-back-to-top" id="btn-back-to-top"><i class="fas fa-arrow-up"></i></button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,433 +1,867 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Salim Hosen">
+<html lang="en" data-theme="light">
 
-    <meta property="og:title" content="Mohammad Salim Hosen - Senior Software Engineer">
-    <meta property="og:description" content="Senior Full-Stack Software Engineer specializing in Laravel, CodeIgniter, React, Vue, Node.js, Python, SaaS platforms, backend architecture, APIs, automation, AI integration, AWS, and Docker.">
-    <meta property="og:image" content="images/avatar.svg">
-    <meta property="og:url" content="https://salim-hosen.com">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Mohammad Salim Hosen">
+  <meta name="robots" content="index, follow">
 
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+  <title>Mohammad Salim Hosen &ndash; Senior Full-Stack &amp; AI Systems Engineer</title>
+  <meta name="description"
+    content="Senior Full-Stack & AI Systems Engineer specializing in Laravel, Python, ClickHouse, React, AWS, and production AI integrations.">
+  <meta name="keywords"
+    content="Senior Software Engineer, Full Stack Engineer, AI Systems, Laravel, Python, ClickHouse, LLM, Vector Search, React, AWS, Docker, Remote Engineer">
 
-    <meta name="description" content="Senior Full-Stack Software Engineer specializing in Laravel, CodeIgniter, React, Vue, Node.js, Python, SaaS platforms, backend architecture, APIs, automation, AI integration, AWS, and Docker.">
-    <meta name="keywords" content="Senior Software Engineer, Full Stack Developer, Laravel Developer, React Developer, Vue Developer, Node.js, Python, CodeIgniter, SaaS, API Development, AWS, Docker, AI Integration">
-    <title>Mohammad Salim Hosen - Senior Software Engineer</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400;1,600&family=Roboto:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet"> -->
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <!-- <link rel="stylesheet" href="css/reset.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    
-  </head>
-  <body>
-    <!-------------------- Start of Header Area -------------------->
-    <header class="header-area">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light px-0">
-          <a class="navbar-brand" href="#">
-            SALIM
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://salim-hosen.github.io">
+  <meta property="og:title" content="Mohammad Salim Hosen &ndash; Senior Full-Stack &amp; AI Systems Engineer">
+  <meta property="og:description"
+    content="Senior Full-Stack & AI Systems Engineer with 6+ years building scalable SaaS platforms, data-intensive systems, and production AI integrations.">
+  <meta property="og:image" content="images/hero-portrait.png">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+
+  <!-- Google Fonts: Plus Jakarta Sans, JetBrains Mono & Caveat (Handwritten) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="css/all.min.css">
+
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ====================================================================
+       Header & Navigation Bar
+       ==================================================================== -->
+  <header class="site-nav-header">
+    <div class="container">
+      <nav class="nav-container">
+
+        <!-- Logo -->
+        <a href="#" class="brand-link" title="Mohammad Salim Hosen">
+          <span>SALIM</span>
+          <span class="brand-sparkle">✦</span>
+        </a>
+
+        <!-- Main Navigation Links -->
+        <ul class="main-nav-links">
+          <li><a href="#hero" class="main-nav-link active">Home</a></li>
+          <li><a href="#about" class="main-nav-link">About</a></li>
+          <li><a href="#experience" class="main-nav-link">Experience</a></li>
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
+          <li><a href="#blog" class="main-nav-link">Blog</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Controls: Theme Toggle & Download Resume -->
+        <div class="nav-controls">
+          <button class="btn-theme-toggle" id="btn-theme-toggle" title="Toggle Light/Dark Theme"
+            aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="mx-auto"></div>
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer">Blog</a>
-              </li>
-            </ul>
+          <a href="file/Mohammad-Salim-Hosen-Resume.pdf" download="Mohammad-Salim-Hosen-Resume.pdf"
+            class="btn-download-resume-header">
+            <i class="fas fa-download"></i>
+            <span>Download Resume</span>
+          </a>
+          <button class="mobile-hamburger" aria-label="Open mobile menu">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- ====================================================================
+       Hero Section
+       ==================================================================== -->
+  <section class="hero-wrapper" id="hero">
+    <div class="container">
+      <div class="hero-columns">
+
+        <!-- Left Column: Copy & Actions -->
+        <div class="reveal-on-scroll">
+          <div class="hero-badge-pill">BUILD &bull; AUTOMATE &bull; SCALE</div>
+          <h1 class="hero-name-title">Mohammad Salim Hosen</h1>
+          <h2 class="hero-sub-title">Senior Full-Stack &amp; AI Systems Engineer</h2>
+
+          <p class="hero-intro-desc">
+            I build scalable SaaS platforms, AI-powered systems, high-throughput data pipelines, and modern web
+            applications that solve real-world problems.
+          </p>
+
+          <!-- Tech Pills -->
+          <div class="hero-tech-pills">
+            <span class="hero-pill">Python</span>
+            <span class="hero-pill">Node.js</span>
+            <span class="hero-pill">Laravel</span>
+            <span class="hero-pill">React</span>
+            <span class="hero-pill">AI/LLMs</span>
+            <span class="hero-pill">ClickHouse</span>
+            <span class="hero-pill">AWS</span>
           </div>
-        </nav>
+
+          <!-- CTAs -->
+          <div class="hero-cta-buttons">
+            <a href="#projects" class="btn-primary-blue">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="file/Mohammad-Salim-Hosen-Resume.pdf" download="Mohammad-Salim-Hosen-Resume.pdf"
+              class="btn-outline-white">
+              <i class="fas fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn-outline-white">
+              <i class="far fa-envelope"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Metadata Bar -->
+          <div class="hero-meta-bar">
+            <div class="meta-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Dhaka, Bangladesh (UTC +6)</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-globe"></i>
+              <span>Open to Remote Worldwide</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-plane-departure"></i>
+              <span>Open to Relocation (Visa Sponsorship)</span>
+            </div>
+            <div class="meta-item">
+              <i class="fas fa-briefcase"></i>
+              <span>6+ Years Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Visual Portrait Composition -->
+        <div class="hero-visual-frame reveal-on-scroll reveal-delay-200">
+          <div class="hero-blob-shape"></div>
+          <img src="images/hero-portrait.png" alt="Mohammad Salim Hosen" class="hero-portrait-image">
+
+          <!-- Handwritten Annotation -->
+          <div class="annotation-curved">
+            <span>Turning Ideas into Real Products</span>
+            <svg class="annotation-arrow" viewBox="0 0 50 30">
+              <path d="M 5 5 Q 35 10 40 25 M 32 20 L 40 25 L 42 16"></path>
+            </svg>
+          </div>
+
+          <!-- Floating Code Card -->
+          <div class="floating-code-card">
+            <div><span>&gt;</span> Build()</div>
+            <div><span>&gt;</span> Automate()</div>
+            <div><span>&gt;</span> Scale()</div>
+            <div><span>&gt;</span> Repeat()</div>
+          </div>
+
+          <!-- Floating Status Pill -->
+          <div class="floating-status-pill">
+            <span class="status-dot-pulse"></span>
+            <span>Available for new opportunities</span>
+          </div>
+        </div>
+
       </div>
-    </header>
+    </div>
+  </section>
 
-    <section class="hero-area p-spacer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-5 hero-left">
-            <div class="intro">
-              <h5>Hey, I am</h5>
-              <h1>Mohammad Salim <br/>Hosen</h1>
-              <h6>Senior Full-Stack Software Engineer</h6>
-              <p>Building scalable SaaS platforms, backend systems, REST APIs, automation workflows, and AI-integrated products with Laravel, CodeIgniter, React, Vue, Node.js, and Python.</p>
-              <!-- <a href="" class="btn btn-danger">Resume</a> -->
-              <ul class="social-media hero-media">
-                <li><a href="https://www.facebook.com/salimh0sen/" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook-f"></i></a></li>
-                <!-- <li><a href="https://api.whatsapp.com/send?phone=8801762473884"><i class="uil uil-whatsapp"></i></a></li> -->
-                <li><a href="https://www.linkedin.com/in/salim-pro/" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></li>
-                <li><a href="https://github.com/salim-hosen" target="_blank" rel="noopener noreferrer"><i class="uil uil-github-alt"></i></a></li>
-                <li><a href="https://www.youtube.com/@bitbotlab" target="_blank" rel="noopener noreferrer"><i class="uil uil-youtube"></i></a></li>
-              </ul>
+  <!-- ====================================================================
+       Trusted Technologies Row
+       ==================================================================== -->
+  <section class="trusted-tech-section">
+    <div class="container">
+      <div class="trusted-tech-heading reveal-on-scroll">TRUSTED TECHNOLOGIES</div>
+
+      <div class="tech-logos-row reveal-on-scroll reveal-delay-100">
+
+        <!-- Laravel -->
+        <div class="tech-logo-item" title="Laravel">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M3 7l9-5 9 5v10l-9 5-9-5V7z" stroke="#f43f5e" stroke-width="2" stroke-linejoin="round" />
+            <path d="M12 2v20M3 7l9 5 9-5" stroke="#f43f5e" stroke-width="2" />
+          </svg>
+          <span>Laravel</span>
+        </div>
+
+        <!-- React -->
+        <div class="tech-logo-item" title="React">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2">
+            <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(30 12 12)" />
+            <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(90 12 12)" />
+            <ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(150 12 12)" />
+            <circle cx="12" cy="12" r="1.5" fill="#0ea5e9" />
+          </svg>
+          <span>React</span>
+        </div>
+
+        <!-- Python -->
+        <div class="tech-logo-item" title="Python">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 2C8 2 6 3 6 5v3h6v1H4C2 9 2 11 2 13s1 4 4 4h2v-2c0-2 2-3 4-3h4c2 0 3-1 3-3V5c0-2-2-3-7-3zm-3 2a1 1 0 110 2 1 1 0 010-2z"
+              fill="#0284c7" />
+            <path
+              d="M12 22c4 0 6-1 6-3v-3h-6v-1h8c2 0 2-2 2-4s-1-4-4-4h-2v2c0 2-2 3-4 3h-4c-2 0-3 1-3 3v4c0 2 2 3 7 3zm3-2a1 1 0 110-2 1 1 0 010 2z"
+              fill="#f59e0b" />
+          </svg>
+          <span>Python</span>
+        </div>
+
+        <!-- AWS -->
+        <div class="tech-logo-item" title="AWS">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none">
+            <path d="M4 14c4 4 12 4 16 0" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" />
+            <path d="M17 14l3 1-1-3" stroke="#ea580c" stroke-width="2" stroke-linecap="round" />
+          </svg>
+          <span>AWS</span>
+        </div>
+
+        <!-- ClickHouse -->
+        <div class="tech-logo-item" title="ClickHouse">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="#eab308">
+            <rect x="2" y="8" width="2" height="8" />
+            <rect x="6" y="5" width="2" height="14" />
+            <rect x="10" y="3" width="2" height="18" />
+            <rect x="14" y="5" width="2" height="14" />
+            <rect x="18" y="8" width="2" height="8" />
+          </svg>
+          <span>ClickHouse</span>
+        </div>
+
+        <!-- Docker -->
+        <div class="tech-logo-item" title="Docker">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="#0284c7">
+            <rect x="4" y="10" width="3" height="2" />
+            <rect x="8" y="10" width="3" height="2" />
+            <rect x="12" y="10" width="3" height="2" />
+            <rect x="8" y="7" width="3" height="2" />
+            <rect x="12" y="7" width="3" height="2" />
+            <path d="M2 13c1 0 2 2 4 2s3-2 5-2 3 2 5 2 3-2 5-2c1 0 2 1 2 2 0 4-4 6-10 6S2 17 2 13z" />
+          </svg>
+          <span>Docker</span>
+        </div>
+
+        <!-- Node.js -->
+        <div class="tech-logo-item" title="Node.js">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+              fill="#339933" />
+            <path
+              d="M13.6 15.6C12.7 16.2 11.5 16.3 10.6 15.9L8.4 14.8L7.2 15.6C8.5 16.9 10.4 17.3 12.1 16.7L15 15.2C15.9 14.7 16.4 13.9 16.4 12.9C16.4 12 15.9 11.2 15 10.7L12.1 9.2C11.2 8.7 10 8.6 9.1 9L11.3 10.1L12.5 9.3C11.2 8 9.3 7.6 7.6 8.2L4.7 9.7C3.8 10.2 3.3 11 3.3 12C3.3 12.9 3.8 13.7 4.7 14.2L5.8 14.8C6 14.9 6.2 15 6.4 15L7.5 15.6C8 15.9 8.6 15.9 9.1 15.6L13.6 13.3V15.6Z"
+              fill="white" />
+          </svg>
+          <span>Node.js</span>
+        </div>
+
+        <!-- Next.js -->
+        <div class="tech-logo-item" title="Next.js">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#0f172a" />
+            <path d="M8 7v10M16 7l-7 10" stroke="#ffffff" stroke-width="1.8" />
+          </svg>
+          <span>Next.js</span>
+        </div>
+
+        <!-- PostgreSQL -->
+        <div class="tech-logo-item" title="PostgreSQL">
+          <svg class="tech-icon-svg" viewBox="0 0 24 24" fill="none" stroke="#0284c7" stroke-width="2">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M8 12c1-3 5-3 6 0s1 4-2 4-3-1-4-4z" />
+          </svg>
+          <span>PostgreSQL</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       About Me Section
+       ==================================================================== -->
+  <section class="section-spacer" id="about">
+    <div class="container">
+      <div class="about-grid-layout">
+
+        <!-- Left: Workspace Photo -->
+        <div class="about-photo-wrapper reveal-on-scroll">
+          <img src="images/about-desk.jpg" alt="Engineering Workspace" class="about-desk-img">
+          <div class="about-code-badge">&lt;/&gt;</div>
+        </div>
+
+        <!-- Right: Text & Bio -->
+        <div class="about-text-content reveal-on-scroll reveal-delay-200">
+          <div class="section-kicker-badge">ABOUT ME</div>
+          <h2 class="section-main-heading" style="margin-bottom: 20px;">
+            Engineering Products for a Better Tomorrow
+          </h2>
+
+          <p>
+            I'm Mohammad Salim Hosen, a Senior Full-Stack &amp; AI Systems Engineer from Dhaka, Bangladesh, with 6+
+            years of experience building production-grade SaaS platforms, data-intensive systems, and automation
+            solutions. I specialize in Laravel, CodeIgniter, React, Next.js, Python, ClickHouse, AWS, and modern AI
+            technologies.
+          </p>
+
+          <p>
+            I enjoy solving complex problems, designing scalable architectures, and turning ideas into products that
+            create real value. I'm passionate about clean code, performance optimization, and building systems that
+            scale.
+          </p>
+
+          <div class="about-actions-row">
+            <a href="file/Mohammad-Salim-Hosen-Resume.pdf" download="Mohammad-Salim-Hosen-Resume.pdf" class="btn-primary-blue">
+              <i class="fas fa-download" style="margin-right: 6px;"></i>
+              <span>Download Resume</span>
+            </a>
+
+            <!-- Social Media Icons Strip -->
+            <div class="social-icons-strip">
+              <a href="https://github.com/salim-hosen" target="_blank" rel="noopener noreferrer" class="social-icon-btn"
+                title="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/salim-pro/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/@bitbotlab" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="Medium">
+                <i class="fab fa-medium-m"></i>
+              </a>
+              <a href="https://leetcode.com/salim-hosen/" target="_blank" rel="noopener noreferrer"
+                class="social-icon-btn" title="LeetCode">
+                <i class="fas fa-code"></i>
+              </a>
             </div>
           </div>
-          <div class="col-md-7 hero-right">
-            <div class="hero-img">
-              <img src="images/web-development.svg" loading="eager" alt="Hero Section Image" class="img-fluid">
-            </div>
-          </div>  
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Experience Section (My Professional Journey)
+       ==================================================================== -->
+  <section class="section-spacer" id="experience" style="background: var(--bg-subtle);">
+    <div class="container">
+
+      <!-- Section Top Row -->
+      <div class="section-top-row reveal-on-scroll">
+        <div>
+          <div class="section-kicker-badge">EXPERIENCE</div>
+          <h2 class="section-main-heading">My Professional Journey</h2>
+        </div>
+        <a href="file/Mohammad-Salim-Hosen-Resume.pdf" download="Mohammad-Salim-Hosen-Resume.pdf" class="view-all-link">
+          <i class="fas fa-download"></i>
+          <span>Download PDF</span>
+        </a>
+      </div>
+
+      <!-- Timeline Rail Header with connected blue dot markers -->
+      <div class="timeline-track-header">
+        <div class="timeline-step-dot">
+          <div class="step-marker"></div>
+          <div class="step-dates">Mar 2025 &ndash; Present</div>
+        </div>
+        <div class="timeline-step-dot">
+          <div class="step-marker"></div>
+          <div class="step-dates">Jan 2022 &ndash; Mar 2025</div>
+        </div>
+        <div class="timeline-step-dot">
+          <div class="step-marker"></div>
+          <div class="step-dates">Sep 2020 &ndash; Jan 2022</div>
         </div>
       </div>
-    </section>
 
-    <main>
-      <section class="about-area p-spacer">
-        <div class="container">
-          <h2 class="text-center">About Me</h2>
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="row">
-                <div class="col-md-5">
-                  <div class="about-img">
-                    <img src="images/avatar2.svg" alt="Avatar" loading="eager">
-                  </div>
-                </div>
-                <div class="col-md-7">
-                  <div class="about-me">
-                    <p>
-                    I am Mohammad Salim Hosen, a Senior Full-Stack Software Engineer from Dhaka, Bangladesh with 6+ years of experience designing and building scalable web applications, SaaS platforms, REST APIs, automation systems, and data-intensive backend services. I specialize in Laravel, CodeIgniter, React, Vue, Next.js, Node.js, Python, MySQL, PostgreSQL, Redis, ClickHouse, AWS, Docker, CI/CD, backend architecture, web scraping, AI integration, and performance optimization.
-                    </p>
-                    <a href="file/Mohammad-Salim-Hosen-Resume.pdf" class="btn btn-danger" download>
-                      <i class="uil uil-import"></i>
-                      <span class="mx-1"></span>
-                      <span>Resume</span>
-                    </a>
-                    <a href="resume.html" target="_blank" rel="noopener noreferrer" class="btn btn-danger">
-                      <i class="uil uil-link"></i>
-                      <span class="mx-1"></span>
-                      <span>Web Resume</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+      <!-- 3 Horizontal Experience Cards Grid -->
+      <div class="experience-cards-grid">
+
+        <!-- Card 1: Byteshake Ltd. -->
+        <div class="experience-card-item reveal-on-scroll">
+          <div class="card-company-header">
+            <h3 class="company-title">Byteshake Ltd.</h3>
+            <div class="company-badge-icon badge-byteshake">
+              <i class="fas fa-layer-group"></i>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="services-area p-spacer">
-        <div class="container">
-          <h2 class="text-center">Expertise</h2>
-          <div class="row">
-            <div class="col-md-4 service">
-              <div class="service-1">
-                <i class="uil uil-palette"></i>
-                <h5>Backend Architecture</h5>
-                <p>I design and build scalable backend systems, REST APIs, admin dashboards, SaaS platforms, and high-performance applications using Laravel, CodeIgniter, Node.js, MySQL, PostgreSQL, Redis, and ClickHouse.</p>
-              </div>
-            </div>
-            <div class="col-md-4 service">
-              <div class="service-2">
-                <i class="uil uil-brackets-curly"></i>
-                <h5>Full-Stack Development</h5>
-                <p>
-                  I develop production-ready full-stack web applications using Laravel, React.js, Vue.js, Next.js, JavaScript, TypeScript, REST APIs, and modern frontend/backend engineering practices.</p>
-              </div>
-            </div>
-            <div class="col-md-4 service">
-              <div class="service-3">
-                <i class="uil uil-mobile-android"></i>
-                <h5>Automation & AI Integration</h5>
-                <p>I build Python-based web scraping systems, data processing workflows, AI-powered search/filtering features, automation tools, and integrations that improve business operations and data discovery.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="qualification-area p-spacer">
-        <div class="container">
-          <h2 class="text-center">Qualification</h2>
-          <div class="row">
-            <div class="col-md-5 mx-auto">
-              <div class="qualification-tab">
-                <a href="#" id="edu-tab" class="active"><i class="uil uil-graduation-cap"></i> Education</a>
-                <span class="mx-2"></span>
-                <a href="#" id="work-tab"><i class="uil uil-briefcase-alt"></i> Work</a>
-              </div>
-              <div class="timeline edu-timeline">
-                <div class="timeline-content">
-                  <span class="time">2016 - 2020</span>
-                  <h5>B.Sc in Computer Science & Engineering</h5>
-                  <p>Graduated from Daffodil International University. Participated in programming contests and was a member of the CPC Club of DIU.</p>
-                </div>
-                <div class="timeline-content">
-                  <span class="time">2012 - 2014</span>
-                  <h5>HSC</h5>
-                  <p>Higher Secondary School Certificate was accomplished from MEH Arif College with a GPA of <strong>4.6</strong> out of 5.0</p>
-                </div>
-                <div class="timeline-content">
-                  <span class="time">2010 - 2012</span>
-                  <h5>SSC</h5>
-                  <p>Completed My Secondary School Certificate from MEH Arif College Gazipur, Dhaka with a GPA of <strong>5.0</strong> out of 5.0</p>
-                </div>
-                <div class="v-line"></div>
-              </div>
-              <div class="timeline work-timeline">
-                <div class="timeline-content">
-                  <span class="time">Mar 2025 - Present</span>
-                  <h5>Byteshake Ltd.</h5>
-                  <p>Senior Software Engineer working on backend architecture, scalable web systems, Python-based scraping engines, AI-powered search/filtering, ClickHouse optimization, REST APIs, Laravel, CodeIgniter 4, and AWS-based deployment workflows.</p>
-                </div>
-                <div class="v-line"></div>
-                <div class="timeline-content">
-                  <span class="time">Jan 2022 - Mar 2025</span>
-                  <h5>CureTech Ltd.</h5>
-                  <p>Senior Software Engineer responsible for full-stack development, inventory systems, CRM workflows, REST APIs for delivery management applications, automated product scraping, Laravel, React, Next.js, MySQL, Docker, and GitHub Actions based CI/CD.</p>
-                </div>
-                <div class="v-line"></div>
-                <div class="timeline-content">
-                  <span class="time">Sep 2020 - Jan 2022</span>
-                  <h5>Riadah Incubator</h5>
-                  <p>Software Engineer responsible for Laravel and Vue.js based web applications, multivendor e-commerce systems, CRM systems, database design, server management, and Python-based data scraping workflows.</p>
-                </div>
-                <div class="v-line"></div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-
-      <section class="portfolio-section p-spacer">
-        <div class="container">
-          <h2 class="text-center">Top Projects</h2>
-          
-          
-          <ul class="portfolio-tabs">
-            <li class="active">All</li>
-            <li data-filter=".popular">Popular</li>
-            <li data-filter=".latest">Latest</li>
-            <li><a href="https://sites.google.com/view/saalim" id="external" target="_blank" rel="noopener noreferrer">Practice <i class="uil uil-external-link-alt"></i></a></li>
+          <div class="role-designation">Senior Software Engineer</div>
+          <div class="role-sub-focus">Backend Architecture &amp; AI Systems</div>
+          <ul class="experience-bullet-list">
+            <li>Designing and building high-scale systems</li>
+            <li>AI-powered search and automation</li>
+            <li>Cloud infrastructure and DevOps</li>
+            <li>Leading backend architecture</li>
           </ul>
+        </div>
 
-          <div class="row grid">
-            
-            <div class="col-md-4 popular">
-              <a href="https://tenderbase.co.uk" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/pickgo.png" loading="lazy" alt="Tenderbase Tender Aggregation Platform" class="img-fluid">
-                <div class="project-content">
-                  <h6>Tenderbase</h6>
-                  <ul class="project-keywords">
-                    <li>Python</li>
-                    <li>CI4</li>
-                    <li>ClickHouse</li>
-                    <li>AWS</li>
-                  </ul>
-                  <p>High-scale tender aggregation and analytics platform with Python scraping engine, CI4 backend, Laravel services, ClickHouse analytics, AI-powered search/filtering, and AWS deployment architecture.</p>
-                </div>
-              </a>
+        <!-- Card 2: CureTech Ltd. -->
+        <div class="experience-card-item reveal-on-scroll reveal-delay-100">
+          <div class="card-company-header">
+            <h3 class="company-title">CureTech Ltd.</h3>
+            <div class="company-badge-icon badge-curetech">
+              <i class="fas fa-cubes"></i>
             </div>
+          </div>
+          <div class="role-designation">Senior Software Engineer</div>
+          <div class="role-sub-focus">Full-Stack &amp; Business Systems</div>
+          <ul class="experience-bullet-list">
+            <li>Engineered Tajabajar, a scalable grocery e-commerce platform</li>
+            <li>Developed comprehensive internal ERP &amp; CRM systems</li>
+            <li>Handled complex relational databases and business logic</li>
+            <li>Managed cloud deployment and performance optimization</li>
+          </ul>
+        </div>
 
-            <div class="col-md-4 popular">
-              <a href="https://my.taptoconnect.app" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/tajabajar.png" loading="lazy" alt="TapToConnect SaaS Platform" class="img-fluid">
-                <div class="project-content">
-                  <h6>TapToConnect</h6>
-                  <ul class="project-keywords">
-                    <li>Laravel</li>
-                    <li>React</li>
-                    <li>SaaS</li>
-                  </ul>
-                  <p>Laravel + React SaaS platform for business automation.</p>
-                </div>
-              </a>
+        <!-- Card 3: Riadah Incubator -->
+        <div class="experience-card-item reveal-on-scroll reveal-delay-200">
+          <div class="card-company-header">
+            <h3 class="company-title">Riadah Incubator</h3>
+            <div class="company-badge-icon badge-riadah">
+              <i class="fas fa-store"></i>
             </div>
+          </div>
+          <div class="role-designation">Software Engineer</div>
+          <div class="role-sub-focus">Full-Stack &amp; Platform Development</div>
+          <ul class="experience-bullet-list">
+            <li>Developed Asoug.com (multi-vendor e-commerce)</li>
+            <li>Built Riadahin.com and Eventincu platforms</li>
+            <li>Worked with Laravel, Vue.js, MySQL</li>
+            <li>Collaborated in agile development cycles</li>
+          </ul>
+        </div>
 
-            <div class="col-md-4 popular">
-              <a href="https://revuity.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/jobincu.jpg" loading="lazy" alt="Revuity Application" class="img-fluid">
-                <div class="project-content">
-                  <h6>Revuity</h6>
-                  <ul class="project-keywords">
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Supabase</li>
-                  </ul>
-                  <p>React + Node.js + Supabase application.</p>
-                </div>
-              </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Featured Projects (Selected Work)
+       ==================================================================== -->
+  <section class="section-spacer" id="projects">
+    <div class="container">
+
+      <!-- Section Top Row -->
+      <div class="section-top-row reveal-on-scroll">
+        <div>
+          <div class="section-kicker-badge">FEATURED PROJECTS</div>
+          <h2 class="section-main-heading">Selected Work</h2>
+        </div>
+        <a href="#projects" class="view-all-link">
+          <span>View All Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- Flagship Project Card: Tenderbase -->
+      <div class="flagship-project-card reveal-on-scroll">
+        <div>
+          <span class="flagship-badge">Flagship Project</span>
+          <h3 class="flagship-title">Tenderbase</h3>
+          <div class="flagship-subtitle">Procurement Intelligence Platform</div>
+          <p class="flagship-desc">
+            Procurement intelligence platform featuring AI semantic search, automated data pipelines, interactive Gantt charts, and enterprise CRM integrations.
+          </p>
+
+          <div class="flagship-metrics-row">
+            <div class="metric-stat-box">
+              <span class="stat-value">500K+</span>
+              <span class="stat-label">Tenders Indexed</span>
             </div>
-            <div class="col-md-4 popular latest">
-              <a href="https://pickgogift.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/asoug.jpg" loading="lazy" alt="PickGoGift Marketplace Platform" class="img-fluid">
-                <div class="project-content">
-                  <h6>PickGoGift</h6>
-                  <ul class="project-keywords">
-                    <li>Laravel</li>
-                    <li>Vue.js</li>
-                    <li>Marketplace</li>
-                  </ul>
-                  <p>Laravel + Vue.js gift marketplace platform.</p>
-                </div>
-              </a>
+            <div class="metric-stat-box">
+              <span class="stat-value">AI Engine</span>
+              <span class="stat-label">Search &amp; Audits</span>
             </div>
-            <div class="col-md-4 popular">
-              <a href="https://asoug.com/" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/hr-logistic.jpg" loading="lazy" alt="Asoug Web Application and Ecommerce Platform" class="img-fluid">
-                <div class="project-content">
-                  <h6>Asoug</h6>
-                  <ul class="project-keywords">
-                    <li>Laravel</li>
-                    <li>Vue.js</li>
-                    <li>Ecommerce</li>
-                  </ul>
-                  <p>Laravel + Vue.js web application/e-commerce platform.</p>
-                </div>
-              </a>
+            <div class="metric-stat-box">
+              <span class="stat-value">5+ CRMs</span>
+              <span class="stat-label">Integrated</span>
             </div>
-            <div class="col-md-4 popular latest">
-              <a  href="https://riadahin.com" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/riadahin.jpg" loading="lazy" alt="Riadahin Corporate Website" class="img-fluid">
-                <div class="project-content">
-                  <h6>Riadahin Startup</h6>
-                  <ul class="project-keywords">
-                    <li>Laravel</li>
-                    <li>MySql</li>
-                  </ul>
-                </div>
+          </div>
+
+          <div class="flagship-pills">
+            <span class="hero-pill">Python</span>
+            <span class="hero-pill">React</span>
+            <span class="hero-pill">CodeIgniter 4</span>
+            <span class="hero-pill">OpenAI</span>
+          </div>
+
+          <div class="flagship-buttons">
+            <a href="case-study-tenderbase.html" class="btn-primary-blue">
+              <span>View Case Study</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="https://tenderbase.co.uk" target="_blank" rel="noopener noreferrer" class="btn-outline-white">
+              <span>Live Site</span>
+              <i class="fas fa-external-link-alt" style="font-size: 11px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Browser Frame Mockup -->
+        <div class="browser-mockup-frame">
+          <div class="mockup-header-dots">
+            <span class="mac-dot dot-red"></span>
+            <span class="mac-dot dot-yellow"></span>
+            <span class="mac-dot dot-green"></span>
+          </div>
+          <img src="images/tenderbase-ui.jpg" alt="Tenderbase User Interface" class="mockup-img">
+        </div>
+      </div>
+
+      <!-- 3 Secondary Project Cards -->
+      <div class="secondary-projects-grid">
+
+        <!-- Card 1: TapToConnect -->
+        <div class="project-card-box reveal-on-scroll">
+          <div class="project-icon-box icon-purple">
+            <i class="fas fa-id-card"></i>
+          </div>
+          <h4 class="project-box-name">TapToConnect</h4>
+          <div class="project-box-category">SaaS Digital Identity Platform</div>
+          <p class="project-box-desc">
+            End-to-end platform for digital identity sharing with advanced admin controls and real-time analytics.
+          </p>
+          <div class="project-box-tags">
+            <span class="hero-pill">Laravel</span>
+            <span class="hero-pill">React</span>
+            <span class="hero-pill">NFC</span>
+            <span class="hero-pill">MySQL</span>
+          </div>
+          <div class="project-box-links">
+            <a href="https://my.taptoconnect.app" target="_blank" rel="noopener noreferrer">
+              <span>Live Site</span>
+              <i class="fas fa-external-link-alt" style="font-size: 10px;"></i>
+            </a>
+            <a href="case-study-taptoconnect.html">
+              <span>Case Study</span>
+              <i class="fas fa-arrow-right" style="font-size: 10px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Revuity -->
+        <div class="project-card-box reveal-on-scroll reveal-delay-100">
+          <div class="project-icon-box icon-blue">
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <h4 class="project-box-name">Revuity</h4>
+          <div class="project-box-category">Customer Feedback Platform</div>
+          <p class="project-box-desc">
+            Collect and manage customer feedback with automated follow-ups and analytics dashboards.
+          </p>
+          <div class="project-box-tags">
+            <span class="hero-pill">React</span>
+            <span class="hero-pill">Node.js</span>
+            <span class="hero-pill">Supabase</span>
+          </div>
+          <div class="project-box-links">
+            <a href="https://revuity.com" target="_blank" rel="noopener noreferrer">
+              <span>Live Site</span>
+              <i class="fas fa-external-link-alt" style="font-size: 10px;"></i>
+            </a>
+            <a href="case-study-revuity.html">
+              <span>Case Study</span>
+              <i class="fas fa-arrow-right" style="font-size: 10px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: PickGo -->
+        <div class="project-card-box reveal-on-scroll reveal-delay-200">
+          <div class="project-icon-box icon-orange">
+            <i class="fas fa-utensils"></i>
+          </div>
+          <h4 class="project-box-name">PickGo</h4>
+          <div class="project-box-category">Restaurant Order Management SaaS</div>
+          <p class="project-box-desc">
+            Massive 2-year proprietary engineering effort featuring real-time order processing, complex inventory
+            algorithms, and POS integrations.
+          </p>
+          <div class="project-box-tags">
+            <span class="hero-pill">Laravel</span>
+            <span class="hero-pill">Vue.js</span>
+            <span class="hero-pill">Real-time</span>
+          </div>
+          <div class="project-box-links">
+            <a href="#projects" class="disabled-link" title="Proprietary / Offline">
+              <span>Proprietary System</span>
+              <i class="fas fa-lock" style="font-size: 10px;"></i>
+            </a>
+            <a href="case-study-pickgo.html">
+              <span>Case Study</span>
+              <i class="fas fa-arrow-right" style="font-size: 10px;"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Asoug -->
+        <div class="project-card-box reveal-on-scroll reveal-delay-300">
+          <div class="project-icon-box icon-green">
+            <i class="fas fa-store"></i>
+          </div>
+          <h4 class="project-box-name">Asoug.com</h4>
+          <div class="project-box-category">Multi-vendor E-commerce</div>
+          <p class="project-box-desc">
+            End-to-end B2B and multi-vendor retail marketplace built entirely from scratch.
+          </p>
+          <div class="project-box-tags">
+            <span class="hero-pill">Laravel</span>
+            <span class="hero-pill">Vue.js</span>
+            <span class="hero-pill">MySQL</span>
+          </div>
+          <div class="project-box-links">
+            <a href="https://asoug.com" target="_blank" rel="noopener noreferrer">
+              <span>Live Site</span>
+              <i class="fas fa-external-link-alt" style="font-size: 10px;"></i>
+            </a>
+            <a href="case-study-asoug.html">
+              <span>Case Study</span>
+              <i class="fas fa-arrow-right" style="font-size: 10px;"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Technical Expertise (Skills & Technologies)
+       ==================================================================== -->
+  <section class="section-spacer" id="expertise" style="background: var(--bg-subtle);">
+    <div class="container">
+
+      <div style="margin-bottom: 36px;" class="reveal-on-scroll">
+        <div class="section-kicker-badge">TECHNICAL EXPERTISE</div>
+        <h2 class="section-main-heading">Skills &amp; Technologies</h2>
+      </div>
+
+      <!-- 4 Quad Cards Grid -->
+      <div class="skills-quad-grid">
+
+        <!-- Card 1: AI & Intelligent Systems -->
+        <div class="skill-quad-card reveal-on-scroll">
+          <div class="skill-icon-round" style="background: #eff6ff; color: #0284c7;">
+            <i class="fas fa-atom"></i>
+          </div>
+          <h3 class="skill-quad-title">AI &amp; Intelligent Systems</h3>
+          <p class="skill-quad-list">
+            LLM APIs, RAG, Vector Search, Embeddings, AI Agents, Automation
+          </p>
+        </div>
+
+        <!-- Card 2: Backend & Architecture -->
+        <div class="skill-quad-card reveal-on-scroll reveal-delay-100">
+          <div class="skill-icon-round" style="background: #f5f3ff; color: #7c3aed;">
+            <i class="fas fa-server"></i>
+          </div>
+          <h3 class="skill-quad-title">Backend &amp; Architecture</h3>
+          <p class="skill-quad-list">
+            Laravel, CodeIgniter, Python, Node.js, REST APIs, Microservices, Queues
+          </p>
+        </div>
+
+        <!-- Card 3: Data & Infrastructure -->
+        <div class="skill-quad-card reveal-on-scroll reveal-delay-200">
+          <div class="skill-icon-round" style="background: #ecfdf5; color: #059669;">
+            <i class="fas fa-database"></i>
+          </div>
+          <h3 class="skill-quad-title">Data &amp; Infrastructure</h3>
+          <p class="skill-quad-list">
+            ClickHouse, PostgreSQL, MySQL, Redis, MongoDB, AWS, Docker, CI/CD, Linux
+          </p>
+        </div>
+
+        <!-- Card 4: Frontend Development -->
+        <div class="skill-quad-card reveal-on-scroll reveal-delay-300">
+          <div class="skill-icon-round" style="background: #eff6ff; color: #2563eb;">
+            <i class="fas fa-laptop-code"></i>
+          </div>
+          <h3 class="skill-quad-title">Frontend Development</h3>
+          <p class="skill-quad-list">
+            React, Next.js, Vue.js, TypeScript, JavaScript, Tailwind CSS, HTML5, CSS3
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Latest Writings (From My Blog)
+       ==================================================================== -->
+  <section class="section-spacer" id="blog">
+    <div class="container">
+
+      <!-- Section Top Row -->
+      <div class="section-top-row reveal-on-scroll">
+        <div>
+          <div class="section-kicker-badge">LATEST WRITINGS</div>
+          <h2 class="section-main-heading">From My Blog</h2>
+        </div>
+        <a href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer" class="view-all-link">
+          <span>View All Posts</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- 3 Blog Cards -->
+      <div class="blog-cards-grid">
+
+        <!-- Post 1 -->
+        <div class="blog-card-item reveal-on-scroll">
+          <img src="images/blog-1.jpg" alt="Document Your Laravel API Using Swagger" class="blog-card-thumb">
+          <div class="blog-card-body">
+            <h4 class="blog-card-title">
+              <a href="https://salim-hosen.medium.com/how-to-document-your-laravel-api-using-swagger-5480044bd860" target="_blank" rel="noopener noreferrer">
+                How to Document Your Laravel API Using Swagger
               </a>
+            </h4>
+            <div class="blog-card-meta">Jan 30, 2025 &bull; 4 min read</div>
+          </div>
+        </div>
+
+        <!-- Post 2 -->
+        <div class="blog-card-item reveal-on-scroll reveal-delay-100">
+          <img src="images/blog-2.jpg" alt="Deploy a Laravel Project on an Ubuntu Server" class="blog-card-thumb">
+          <div class="blog-card-body">
+            <h4 class="blog-card-title">
+              <a href="https://salim-hosen.medium.com/how-to-deploy-a-laravel-project-on-an-ubuntu-server-84d3a2e89ebf" target="_blank" rel="noopener noreferrer">
+                How to Deploy a Laravel Project on an Ubuntu Server
+              </a>
+            </h4>
+            <div class="blog-card-meta">Dec 21, 2024 &bull; 6 min read</div>
+          </div>
+        </div>
+
+        <!-- Post 3 -->
+        <div class="blog-card-item reveal-on-scroll reveal-delay-200">
+          <img src="images/blog-3.jpg" alt="Build a Multi-Language Website in Laravel" class="blog-card-thumb">
+          <div class="blog-card-body">
+            <h4 class="blog-card-title">
+              <a href="https://salim-hosen.medium.com/how-to-build-a-multi-language-website-in-laravel-a-complete-guide-7120f4eca054" target="_blank" rel="noopener noreferrer">
+                How to Build a Multi-Language Website in Laravel: A Complete Guide
+              </a>
+            </h4>
+            <div class="blog-card-meta">Dec 20, 2024 &bull; 7 min read</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       Education & Let's Connect (Side-by-Side 2 Columns)
+       ==================================================================== -->
+  <section class="section-spacer" id="contact" style="background: var(--bg-subtle);">
+    <div class="container">
+      <div class="edu-connect-grid">
+
+        <!-- Left: Education -->
+        <div class="reveal-on-scroll">
+          <div class="section-kicker-badge">EDUCATION</div>
+          <div class="edu-card-box">
+            <div class="edu-cap-icon">
+              <i class="fas fa-graduation-cap"></i>
             </div>
-            <div class="col-md-4">
-              <a href="https://sites.google.com/diu.edu.bd/foodfire" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/foodfire.jpg" loading="lazy" alt="Foodfire University Project" class="img-fluid">
-                <div class="project-content">
-                  <h6>FoodFire</h6>
-                  <ul class="project-keywords">
-                    <li>Java</li>
-                    <li>Android</li>
-                    <li>React</li>
-                    <li>Nodejs</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://github.com/salim-hosen/Flight-Schedule-C-and-Data-Structures" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/flight-schedule.jpg" loading="lazy" alt="Flight Schedule University Project" class="img-fluid">
-                <div class="project-content">
-                  <h6>Flight Schedule Project</h6>
-                  <ul class="project-keywords">
-                    <li>C</li>
-                    <li>Data Structure</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-            <div class="col-md-4">
-              <a href="https://sites.google.com/view/saalim" target="_blank" rel="noopener noreferrer" class="project">
-                <img src="images/plus.png" loading="lazy" alt="Archive" class="img-fluid">
-                <div class="project-content">
-                  <i class="uil uil-plus" style="font-size: 30px; color: white;"></i>
-                  <h6>More</h6>
-                </div>
-              </a>
+            <div>
+              <h4 class="edu-degree-name">B.Sc. in Computer Science &amp; Engineering</h4>
+              <div class="edu-school-name">Daffodil International University</div>
+              <div class="edu-year-span">2016 &ndash; 2020</div>
             </div>
           </div>
         </div>
-      </section>
-      <section class="contact-area p-spacer">
-        <div class="container">
-          <h2 class="text-center">Contact Me</h2>
-          <div class="row">
-            <div class="col-md-8 contact-left">
-              <div class="email-at">
-                <h5>Email me At</h5>
-                <a href="mailto:salimhosen.pro@gmail.com" target="_top" title="Email me">
-                  <h1>salimhosen.pro@<span><br/>gmail.com</span></h1>
-                </a>
-                <p>I am open to remote senior software engineering, Laravel, full-stack, SaaS, backend architecture, automation, and AI integration opportunities.</p>
-              </div>
-            </div>
-            <div class="col-md-4 contact-right">
-              <div class="social-media-container">
-                <p>You can also find me on social media and developer platforms.</p>
-                <ul class="social-media">
-                  <li><a href="https://www.facebook.com/salimh0sen/" target="_blank" rel="noopener noreferrer"><i class="uil uil-facebook-f"></i></a></li>
-                  <!-- <li><a href="https://api.whatsapp.com/send?phone=8801762473884"><i class="uil uil-whatsapp"></i></a></li> -->
-                  <li><a href="https://www.linkedin.com/in/mohammad-salim-hosen/" target="_blank" rel="noopener noreferrer"><i class="uil uil-linkedin-alt"></i></a></li>
-                  <li><a href="https://github.com/salim-hosen" target="_blank" rel="noopener noreferrer"><i class="uil uil-github-alt"></i></a></li>
-                  <li><a href="https://www.youtube.com/channel/UCWbGVztpv5PEC15e7nOQRyA" target="_blank" rel="noopener noreferrer"><i class="uil uil-youtube"></i></a></li>
-                </ul>
-              </div>
-            </div>
+
+        <!-- Right: Let's Connect -->
+        <div class="reveal-on-scroll reveal-delay-200">
+          <div class="section-kicker-badge">LET'S CONNECT</div>
+          <h3 class="section-main-heading" style="font-size: 26px; margin-bottom: 10px;">Get In Touch</h3>
+          <p class="connect-side-desc">
+            I'm always open to discussing new opportunities, interesting projects, or just chatting about technology.
+          </p>
+
+          <div class="connect-buttons-row">
+            <a href="mailto:salimhosen.pro@gmail.com" class="btn-primary-blue">
+              <i class="fas fa-envelope"></i>
+              <span>Send Email</span>
+            </a>
+            <a href="https://www.linkedin.com/in/salim-pro/" target="_blank" rel="noopener noreferrer"
+              class="btn-outline-white">
+              <i class="fab fa-linkedin-in" style="color: #0077b5;"></i>
+              <span>LinkedIn</span>
+            </a>
           </div>
         </div>
-      </section>
-    </main>
 
+      </div>
+    </div>
+  </section>
 
-    <footer>
-      <section class="footer-menu">
-        <div class="container">
-          <div class="row footer-menu-row">
-            <div class="col-md-3">
-              <h6>Resources</h6>
-              <ul>
-                <li><a href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer">Blog</a></li>
-                <li><a href="https://sites.google.com/view/saalim" target="_blank" rel="noopener noreferrer">Archive</a></li>
-                <li><a href="https://github.com/salim-hosen" target="_blank" rel="noopener noreferrer">Github</a></li>
-                <li><a href="https://www.youtube.com/@bitbotlab" target="_blank" rel="noopener noreferrer">Youtube</a></li>
-              </ul>
-            </div>
-            <div class="col-md-6">
-              <h6>Online Profiles</h6>
-              <div class="row">
-                <div class="col-md-6 opro"><a href="https://stackoverflow.com/users/12025298/mohammad-salim-hosen" target="_blank" rel="noopener noreferrer">Stack Overflow</a></div>
-                <div class="col-md-6 opro"><a href="https://replit.com/@salimhosen" target="_blank" rel="noopener noreferrer">ReplIt</a></div>
-                <div class="col-md-6 opro"><a href="https://codepen.io/salim-hosen" target="_blank" rel="noopener noreferrer">Codepen</a></div>
-                <div class="col-md-6 opro"><a href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer">Medium</a></div>
-                <div class="col-md-6 opro"><a href="https://www.codecademy.com/profiles/salim_hosen" target="_blank" rel="noopener noreferrer">Codeacademy</a></div>
-                <div class="col-md-6 opro"><a href="https://www.urionlinejudge.com.br/judge/en/profile/132760" target="_blank" rel="noopener noreferrer">URI Online Judge</a></div>
-                <div class="col-md-6 opro"><a href="https://leetcode.com/salim-hosen/" target="_blank" rel="noopener noreferrer">Leet Code</a></div>
-                <div class="col-md-6 opro"><a href="https://www.hackerrank.com/salimhosen" target="_blank" rel="noopener noreferrer">Hacker Rank</a></div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <h6>Contact Details</h6>
-              
-              <ul class="contact-details">
-                <li>
-                  <i class="uil uil-location-pin-alt"></i>
-                  <span>Dhaka, Bangladesh</span>
-                </li>
-                <li>
-                  <i class="uil uil-mobile-android"></i>
-                  <span>+880 1762473884</span>
-                </li>
-                <li>
-                  <i class="uil uil-envelope-edit"></i>
-                  <span>salimhosen.pro@gmail.com</span>
-                </li>
-                <li>
-                  <i class="uil uil-clock"></i>
-                  <span>3 a.m - 6 p.m (GMT)</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+  <!-- ====================================================================
+       Footer
+       ==================================================================== -->
+  <footer class="site-main-footer">
+    <div class="container">
+      <div class="footer-row-layout">
+
+        <!-- Left Footer -->
+        <div class="footer-left">
+          <a href="#" class="brand-link" style="font-size: 18px;">
+            <span>SALIM</span>
+            <span class="brand-sparkle">✦</span>
+          </a>
+          <div class="footer-subtitle-tag">Build &bull; Automate &bull; Scale &bull; Repeat</div>
         </div>
-      </section>
 
-      <section class="copyright">
-        <p>&copy; 2025 Mohammad Salim Hosen</p>
-      </section>
-    </footer>
+        <!-- Right Footer -->
+        <div class="footer-right">
+          <div class="footer-copyright-text">
+            &copy; 2026 Mohammad Salim Hosen. All rights reserved.
+          </div>
+          <div class="footer-links-strip">
+            <a href="https://github.com/salim-hosen" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/salim-pro/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.youtube.com/@bitbotlab" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a href="https://medium.com/@salim-hosen" target="_blank" rel="noopener noreferrer">Blog</a>
+          </div>
+          <button class="btn-back-to-top" id="btn-back-to-top" title="Back to top" aria-label="Back to top">
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
 
-    <!-- JS Files -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/isotope.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+      </div>
+    </div>
+  </footer>
 
-  </body>
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+
+</body>
+
 </html>
