@@ -185,7 +185,7 @@
         </p>
         <ul>
           <li><strong>Data Ingestion Layer:</strong> Contributed to building a scalable web scraping cluster using Python. This system automatically crawls hundreds of portals daily, extracts raw text, cleanses it, and queues it for processing.</li>
-          <li><strong>Storage & Analytics (ClickHouse):</strong> Standard relational databases buckled under the weight of hundreds of thousands of large text blobs during complex text searches. We migrated our core analytical workload to <strong>ClickHouse</strong>, a columnar database perfectly suited for blazing-fast aggregations and filtering over massive datasets.</li>
+          <li><strong>Storage & Analytics (ClickHouse):</strong> Standard relational databases buckled under the weight of hundreds of thousands of large text blobs during complex text searches. I spearheaded the migration of the core analytical workload to <strong>ClickHouse</strong>, a columnar database perfectly suited for blazing-fast aggregations and filtering over massive datasets.</li>
           <li><strong>AI Semantic Search (OpenAI / Vector Embeddings):</strong> To move beyond simple text matching, we utilized OpenAI to generate vector embeddings for tender descriptions. By integrating these embeddings, users can now search for "cloud infrastructure upgrades" and find tenders labeled as "server modernization" based on context.</li>
           <li><strong>The API Backend:</strong> Built with CodeIgniter 4, the REST API serves as the lightweight glue holding the system together, securely exposing the data to our React frontend while managing user authentication and subscription billing.</li>
         </ul>
@@ -197,12 +197,12 @@
           <li><strong>Enterprise Integrations:</strong> Seamlessly integrated the platform with major third-party CRMs and tools including Salesforce, Monday.com, HubSpot, WhatsApp, and Google Sheets.</li>
           <li><strong>Data Ingestion & Automation:</strong> Built a robust Python scraping cluster and automation pipeline that continuously crawls source websites and uploads cleansed data automatically without manual intervention.</li>
           <li><strong>Interactive Gantt Charts:</strong> Designed and implemented dynamic Gantt charts for visualizing complex DPS (Dynamic Purchasing System) and Framework tenders, significantly improving user project planning.</li>
-          <li><strong>Query Optimization:</strong> Initial full-text searches were taking upwards of 3.2 seconds. By optimizing ClickHouse indexes and caching, our team drastically reduced the 95th percentile query latency.</li>
+          <li><strong>Query Optimization:</strong> Initial full-text searches were slow under heavy load. By optimizing ClickHouse indexes and caching, our team drastically reduced the 95th percentile query latency.</li>
         </ul>
 
         <h3>The Impact</h3>
         <p>
-          Today, Tenderbase indexes over <strong>500,000+ tenders</strong> and serves hundreds of enterprise clients. The transition to ClickHouse and the implementation of AI search reduced average time-to-discovery by over 40%, directly translating to higher customer retention and increased contract win rates for our users.
+          Today, Tenderbase indexes over <strong>500,000+ tenders</strong> and serves hundreds of enterprise clients. The transition to ClickHouse and the implementation of AI search improved tender discovery efficiency and enabled users to identify relevant opportunities more quickly.
         </p>
 
         <div style="margin-top: 50px; text-align: center;">
